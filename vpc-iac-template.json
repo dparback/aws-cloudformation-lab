@@ -3,13 +3,13 @@
       "CIDRRange": {
         "Description": "VPCCIDR Range (will be a /16 block)",
         "Type": "String",
-        "Default": "10.251.0.0",
-        "AllowedValues": ["10.250.0.0","10.251.0.0"]
+        "Default": "172.16.0.0",
+	"AllowedValues": ["172.16.0.0","172.17.0.0"]
       }
     },
     "Mappings": {
       "VPCRanges": {
-        "10.250.0.0": {
+        "172.16.0.0": {
           "PublicSubnetAZ1"   : "10.250.0.0/22",
           "PublicSubnetAZ2"   : "10.250.4.0/22",
           "PrivateSubnetAZ1"  : "10.250.32.0/21",
